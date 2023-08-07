@@ -5,28 +5,28 @@
 #!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_2.png
 
 [Rule]
-DOMAIN PROXY,p16-tiktokcdn-com.akamaized.net, PROXY
-DOMAIN-SUFFIX PROXY,bytedapm.com, PROXY
-DOMAIN-SUFFIX PROXY,bytegecko-i18n.com, PROXY
-DOMAIN-SUFFIX PROXY,bytegecko.com, PROXY
-DOMAIN-SUFFIX PROXY,byteoversea.com, PROXY
-DOMAIN-SUFFIX PROXY,ibytedtos.com, PROXY
-DOMAIN-SUFFIX PROXY,ibyteimg.com, PROXY
-DOMAIN-SUFFIX PROXY,ipstatp.com, PROXY
-DOMAIN-SUFFIX PROXY,isnssdk.com, PROXY
-DOMAIN-SUFFIX PROXY,muscdn.com, PROXY
-DOMAIN-SUFFIX PROXY,musical.ly, PROXY
-DOMAIN-SUFFIX PROXY,sgpstatp.com, PROXY
-DOMAIN-SUFFIX PROXY,snssdk.com, PROXY
-DOMAIN-SUFFIX PROXY,tik-tokapi.com, PROXY
-DOMAIN-SUFFIX PROXY,tiktok.com, PROXY
-DOMAIN-SUFFIX PROXY,tiktokcdn-us.com, PROXY
-DOMAIN-SUFFIX PROXY,tiktokcdn.com, PROXY
-DOMAIN-SUFFIX PROXY,tiktokd.net, PROXY
-DOMAIN-SUFFIX PROXY,tiktokd.org, PROXY
-DOMAIN-SUFFIX PROXY,tiktokv.com, PROXY
-DOMAIN-KEYWORD PROXY,musical.ly, PROXY
-DOMAIN-KEYWORD PROXY,tiktok, PROXY
+DOMAIN,p16-tiktokcdn-com.akamaized.net, PROXY
+DOMAIN-SUFFIX,bytedapm.com, PROXY
+DOMAIN-SUFFIX,bytegecko-i18n.com, PROXY
+DOMAIN-SUFFIX,bytegecko.com, PROXY
+DOMAIN-SUFFIX,byteoversea.com, PROXY
+DOMAIN-SUFFIX,ibytedtos.com, PROXY
+DOMAIN-SUFFIX,ibyteimg.com, PROXY
+DOMAIN-SUFFIX,ipstatp.com, PROXY
+DOMAIN-SUFFIX,isnssdk.com, PROXY
+DOMAIN-SUFFIX,muscdn.com, PROXY
+DOMAIN-SUFFIX,musical.ly, PROXY
+DOMAIN-SUFFIX,sgpstatp.com, PROXY
+DOMAIN-SUFFIX,snssdk.com, PROXY
+DOMAIN-SUFFIX,tik-tokapi.com, PROXY
+DOMAIN-SUFFIX,tiktok.com, PROXY
+DOMAIN-SUFFIX,tiktokcdn-us.com, PROXY
+DOMAIN-SUFFIX,tiktokcdn.com, PROXY
+DOMAIN-SUFFIX,tiktokd.net, PROXY
+DOMAIN-SUFFIX,tiktokd.org, PROXY
+DOMAIN-SUFFIX,tiktokv.com, PROXY
+DOMAIN-KEYWORD,musical.ly, PROXY
+DOMAIN-KEYWORD,tiktok, PROXY
 USER-AGENT,TikTok*, PROXY
 
 [Rewrite]

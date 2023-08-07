@@ -1,0 +1,40 @@
+#!name = TikTok解锁台湾
+#!desc = 解锁台湾TikTok，需手动配置台湾节点
+#!author = kikoxvx🅥
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
+#!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_2.png
+
+[Rule]
+DOMAIN PROXY,p16-tiktokcdn-com.akamaized.net, PROXY
+DOMAIN-SUFFIX PROXY,bytedapm.com, PROXY
+DOMAIN-SUFFIX PROXY,bytegecko-i18n.com, PROXY
+DOMAIN-SUFFIX PROXY,bytegecko.com, PROXY
+DOMAIN-SUFFIX PROXY,byteoversea.com, PROXY
+DOMAIN-SUFFIX PROXY,ibytedtos.com, PROXY
+DOMAIN-SUFFIX PROXY,ibyteimg.com, PROXY
+DOMAIN-SUFFIX PROXY,ipstatp.com, PROXY
+DOMAIN-SUFFIX PROXY,isnssdk.com, PROXY
+DOMAIN-SUFFIX PROXY,muscdn.com, PROXY
+DOMAIN-SUFFIX PROXY,musical.ly, PROXY
+DOMAIN-SUFFIX PROXY,sgpstatp.com, PROXY
+DOMAIN-SUFFIX PROXY,snssdk.com, PROXY
+DOMAIN-SUFFIX PROXY,tik-tokapi.com, PROXY
+DOMAIN-SUFFIX PROXY,tiktok.com, PROXY
+DOMAIN-SUFFIX PROXY,tiktokcdn-us.com, PROXY
+DOMAIN-SUFFIX PROXY,tiktokcdn.com, PROXY
+DOMAIN-SUFFIX PROXY,tiktokd.net, PROXY
+DOMAIN-SUFFIX PROXY,tiktokd.org, PROXY
+DOMAIN-SUFFIX PROXY,tiktokv.com, PROXY
+DOMAIN-KEYWORD PROXY,musical.ly, PROXY
+DOMAIN-KEYWORD PROXY,tiktok, PROXY
+USER-AGENT,TikTok*, PROXY
+
+[Rewrite]
+(?<=&mcc_mnc=)4 307 2
+(?<=\d\/\?\w{7}_\w{4}=)1[6-9]..(?=.?.?&) 307 18.4
+(?<=_region=)CN(?=&) 307 TW
+(^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) 302 $118.0$3
+^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) 302 $1$3
+
+[MITM]
+hostname = *.byteoversea.com,*.tik-tokapi.com,*.tiktokv.com

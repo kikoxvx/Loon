@@ -1,7 +1,7 @@
 #!name = TikTok解锁台湾
 #!desc = 解锁台湾TikTok，需手动配置台湾节点
 #!author = kikoxvx🅥
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
+#!homepage = https://github.com/kikoxvx/Loon/blob/main/UnlockTiktokTW.plugin
 #!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_2.png
 
 [Rule]
